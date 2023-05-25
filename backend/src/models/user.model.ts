@@ -14,7 +14,7 @@ export interface IUserModel extends IUser, Document {}
 const UserSchema: Schema = new Schema(
   {
     name: { type: String, required: true, unique: true },
-    viewed: { type: String, default: null },
+    viewed: { type: Boolean, default: null },
     description: { type: String, default: null },
     status: { type: String, required: true },
   },

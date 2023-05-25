@@ -248,7 +248,7 @@ const EditUser: React.FunctionComponent<EditUserProps> = ({ userName }) => {
                 name='viewed'
                 control={
                   <Checkbox
-                    checked={viewed.toString() === 'false' ? false : true}
+                    checked={viewed}
                     onChange={(e) => onValueChange(e)}
                   />
                 }

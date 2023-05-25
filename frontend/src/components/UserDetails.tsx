@@ -82,7 +82,7 @@ const UserDetails: React.FunctionComponent = () => {
   ];
 
   // Reverse the users array to display the last added data first
-  const reversedUsers = [...users].reverse();
+  const reversedUsers = (users && users.length > 0) ?  [...users].reverse() : [];
 
   return (
     // User table component with delete functionality
@@ -123,8 +123,8 @@ const UserDetails: React.FunctionComponent = () => {
                       >
                         <TableCell>{row?.name}</TableCell>
                         <TableCell>{row?.description}</TableCell>
-                        <TableCell style={{ textTransform: 'capitalize' }}>
-                          {row?.viewed}
+                        <TableCell>
+                          {row?.viewed ? 'Yes' : 'No'}
                         </TableCell>
                         <TableCell>
                           {row?.status === 'new'

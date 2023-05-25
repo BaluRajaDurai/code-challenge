@@ -48,7 +48,7 @@ const StartServer = () => {
 
     /** Rules of our API */
     router.use((req, res, next) => {
-        res.header('Access-Control-Allow-Origin', '*');
+        res.header('Access-Control-Allow-Origin', '*'); // Add Whitelist for specific origins if needed
         res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
 
         if (req.method == 'OPTIONS') {
