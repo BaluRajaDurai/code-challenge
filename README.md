@@ -13,6 +13,8 @@ The `/frontend` directory is where you'll find nodejs server using express.
 
 ## Note
 
-Create .env file for both frontend and backend
+Clone the repository from the github repository to your local system.
 
-Remove the setRemove the setTimeout function at the App.tsx if the network is slow
+Create .env file for both frontend and backend.
+
+Remove the setTimeout function at the App.tsx if the network is slow.
